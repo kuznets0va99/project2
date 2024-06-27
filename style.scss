@@ -1,0 +1,78 @@
+body{
+  font-family: "montserrat";
+  background-color: rgb(8, 8, 128);
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+main{
+  background-color: #4796b6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #panel{
+    width: 90%;
+    height: 80%;
+    background-color: #fff;
+    #panel-top{
+      display: flex;
+      width: 100%;
+      height: 80px;
+      background-color: #73c6e7;
+      justify-content: center;
+      gap: 10%;
+      .elem{
+        margin-top: 10px;
+        color: #000;
+        width: 10%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        h4{
+          font-size: 17px;
+          font-weight: 600;
+          padding: 5px;
+        }
+        .box{
+          height: 30px;
+          justify-content: center;
+          padding: 5px;
+          background-color: #fff;
+          border-radius: 5px;
+          font-weight: 500;
+        }
+      }
+    }
+    #panel-bottom{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      flex-wrap: wrap;
+      gap: 1%;
+      padding: 20px;
+      color: #000;
+      width: 100%;
+      
+      height: calc(100% - 80px);
+      .buble{
+        h3{
+          font-size: 17px;
+          font-weight: 600;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius:50%;
+        background-color: #c793d6;
+        &:hover{
+          background-color: #9f61b1;
+        }
+      }
+    }
+  }
+}
